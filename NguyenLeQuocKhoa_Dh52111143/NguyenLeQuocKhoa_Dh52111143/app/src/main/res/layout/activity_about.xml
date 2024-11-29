@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Tên -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên: Nguyễn Lê Quốc Khoa"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Lớp -->
+    <TextView
+        android:id="@+id/tvClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lớp: DH52111143"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        android:layout_marginTop="8dp" />
+
+    <!-- Mã Sinh Viên -->
+    <TextView
+        android:id="@+id/tvStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã Sinh Viên: DH52111143"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvClass"
+        app:layout_constraintStart_toStartOf="@id/tvClass"
+        android:layout_marginTop="8dp" />
+
+    <!-- Số điện thoại -->
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: 0123456789"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvStudentId"
+        app:layout_constraintStart_toStartOf="@id/tvStudentId"
+        android:layout_marginTop="8dp" />
+
+    <!-- Fragment Google Maps -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
