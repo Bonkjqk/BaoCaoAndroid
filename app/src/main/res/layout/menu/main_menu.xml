@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main"
+        android:title="Danh sách phòng ban"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_employee_list"
+        android:title="Danh sách nhân viên"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_add_employee"
+        android:title="Thêm nhân viên"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="Giới thiệu"
+        android:showAsAction="ifRoom" />
+</menu>
